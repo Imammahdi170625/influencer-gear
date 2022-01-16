@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* nav-style */
+.nav-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 10%;
+}
+.link-container{
+    display: flex;
+}
+.link-container a{
+    text-decoration: none;
+    color: black;
+    margin-left: 20px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+@media (max-width:668px) {
+    .nav-container{
+        flex-direction: column;
+    }
+    .link-container{
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    .link-container a{
+        display: block;
+        width: 100%;
+        background-color: rgb(252, 245, 245);
+        border-radius: 5px;
+    }
+}
+
+/* header section */
+.top-header{
+    display: flex;
+    margin: 0 10%;
+}
+.header-title{
+    font-size: 52px;
+    font-weight: 700;
+}
+.container{
+    width: 50%;
+}
+
+.container img{
+    width: 60%;
+    margin-left: 20%;
+
+}
+
+.order-now a{
+    text-decoration: none;
+    background-color: rgb(236, 65, 117);
+    padding: .3em .7em;
+    border-radius: 15px;
+    color: white;
+}
+
+@media (max-width:668px) {
+    .top-header{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .container img{
+        width: 100%;
+    }
+}
+
+/* popular collection  */
+.popular-collection{
+    margin: 10% 15%;
+}
+.collection-title{
+    text-align: center;
+    font-size: 32px;
+}
+.collection-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 35px;
+}
+.collection{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 3px 10px 5px rgba(182, 169, 169, 0.795);
+    border-radius: 5px;
+    padding: 3%;
+}
+.collection .price{
+    font-size: 1.3em;
+    margin-bottom: 0;
+}
+.collection img{
+    
+}
+@media (max-width:668px) {
+    .collection-grid{
+        grid-template-columns: 1fr;
+    }
+}
+
+/* footer */
+.foot{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(2, 2, 31);
+}
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
+.footer-container p{
+    margin: 0 5px;
+    
+    
+}
+.foot-icon .fab{
+    font-size: 44px;
+    margin: 8px 12px;
+}
